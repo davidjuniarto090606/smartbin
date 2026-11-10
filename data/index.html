@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBin - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="brand">
+        <div class="logo">♻</div>
+        <div>
+            <h2>SmartBin</h2>
+            <small>IoT Waste Management</small>
+        </div>
+    </div>
+
+    <p class="menu-title">MENU UTAMA</p>
+    <a href="#dashboard" class="menu active">▦ Dashboard</a>
+    <a href="#monitoring" class="menu">▣ Monitoring Kontainer</a>
+    <a href="#riwayat" class="menu">▤ Riwayat Pemilahan</a>
+
+    <div class="sidebar-bottom">
+        <span class="online-dot"></span>
+        Perangkat SmartBin
+        <strong>Siap Digunakan</strong>
+    </div>
+</div>
+
+<main class="content" id="dashboard">
+
+    <header class="topbar">
+        <div>
+            <p class="subtitle">IOT BASED ELECTRONIC WASTE MANAGEMENT</p>
+            <h1>Dashboard Monitoring</h1>
+        </div>
+        <div class="device-status">
+            <span class="online-dot"></span> ESP32 Online
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div>
+            <span class="welcome-label">SMART WASTE SORTING SYSTEM</span>
+            <h2>Selamat Datang di SmartBin</h2>
+            <p>Sistem pemilahan sampah elektronik berdasarkan nilai ekonomis.</p>
+        </div>
+        <div class="welcome-icon">♻</div>
+    </section>
+
+    <section class="summary">
+        <div class="summary-card">
+            <p>Total Pemilahan</p>
+            <h2>125</h2>
+            <small>Item terdeteksi</small>
+        </div>
+
+        <div class="summary-card">
+            <p>Sampah Bernilai</p>
+            <h2 class="green-text">80</h2>
+            <small>Kontainer 01</small>
+        </div>
+
+        <div class="summary-card">
+            <p>Sampah Tidak Bernilai</p>
+            <h2 class="orange-text">45</h2>
+            <small>Kontainer 02</small>
+        </div>
+    </section>
+
+    <section class="section" id="monitoring">
+        <div class="section-heading">
+            <div>
+                <h2>Monitoring Kontainer</h2>
+                <p>Pemantauan berat dan kapasitas sampah</p>
+            </div>
+            <span class="live">● LIVE MONITORING</span>
+        </div>
+
+        <div class="container-grid">
+
+            <div class="container-card">
+                <div class="card-top">
+                    <div class="bin-icon green-bg">♻</div>
+                    <span class="bin-code">BIN-01</span>
+                </div>
+
+                <h3>Sampah Elektronik Bernilai</h3>
+                <p class="description">
+                    Menampung sampah elektronik yang masih memiliki
+                    nilai jual seperti tembaga, PCB dan baterai.
+                </p>
+
+                <div class="data-row">
+                    <span>Total Berat</span>
+                    <strong>2.500 gram</strong>
+                </div>
+
+                <div class="data-row">
+                    <span>Kapasitas</span>
+                    <strong>65%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-green" style="width:65%"></div>
+                </div>
+
+                <span class="status-text green-text">● Aktif</span>
+            </div>
+
+            <div class="container-card">
+                <div class="card-top">
+                    <div class="bin-icon orange-bg">▣</div>
+                    <span class="bin-code">BIN-02</span>
+                </div>
+
+                <h3>Sampah Tidak Bernilai</h3>
+                <p class="description">
+                    Menampung sampah yang sudah tidak memiliki
+                    nilai jual atau tidak dapat dimanfaatkan kembali.
+                </p>
+
+                <div class="data-row">
+                    <span>Total Berat</span>
+                    <strong>1.200 gram</strong>
+                </div>
+
+                <div class="data-row">
+                    <span>Kapasitas</span>
+                    <strong>40%</strong>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-orange" style="width:40%"></div>
+                </div>
+
+                <span class="status-text orange-text">● Aktif</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="riwayat">
+        <div class="section-heading">
+            <div>
+                <h2>Riwayat Pemilahan</h2>
+                <p>Data sampah yang telah teridentifikasi</p>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>JENIS SAMPAH</th>
+                        <th>KATEGORI</th>
+                        <th>BERAT</th>
+                        <th>KONTTAINER</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Tembaga</td>
+                        <td><span class="badge green-badge">Bernilai</span></td>
+                        <td>250 gram</td>
+                        <td>BIN-01</td>
+                    </tr>
+
+                    <tr>
+                        <td>02</td>
+                        <td>PCB</td>
+                        <td><span class="badge green-badge">Bernilai</span></td>
+                        <td>150 gram</td>
+                        <td>BIN-01</td>
+                    </tr>
+
+                    <tr>
+                        <td>03</td>
+                        <td>Sampah elektronik</td>
+                        <td><span class="badge orange-badge">Tidak bernilai</span></td>
+                        <td>300 gram</td>
+                        <td>BIN-02</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        SmartBin © 2026 | PBL Teknik Informatika
+    </footer>
+
+</main>
+
+</body>
+</html>

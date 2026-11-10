@@ -1,0 +1,411 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f6;
+    color: #19352a;
+}
+
+.sidebar {
+    width: 245px;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 25px 18px;
+    border-right: 1px solid #e5ece7;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.logo {
+    background: #e5f5eb;
+    color: #168452;
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+}
+
+.brand h2 {
+    font-size: 19px;
+}
+
+.brand small {
+    color: #89968e;
+    font-size: 10px;
+}
+
+.menu-title {
+    font-size: 10px;
+    color: #9aa79f;
+    font-weight: bold;
+    margin: 15px 10px;
+}
+
+.menu {
+    display: block;
+    text-decoration: none;
+    color: #687970;
+    padding: 13px;
+    margin-bottom: 7px;
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.menu.active,
+.menu:hover {
+    background: #e9f6ee;
+    color: #168452;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 25px;
+    font-size: 11px;
+    color: #78877e;
+    line-height: 2;
+}
+
+.sidebar-bottom strong {
+    display: block;
+    color: #168452;
+    margin-left: 13px;
+}
+
+.online-dot {
+    display: inline-block;
+    background: #21b576;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.content {
+    margin-left: 245px;
+    padding: 30px 38px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    color: #91a198;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.topbar h1 {
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+.device-status {
+    background: white;
+    padding: 11px 15px;
+    border: 1px solid #e6eee8;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.welcome {
+    background: linear-gradient(110deg, #126b49, #26996b);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-label {
+    color: #c6ebd6;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.welcome h2 {
+    margin: 12px 0;
+    font-size: 23px;
+}
+
+.welcome p {
+    color: #e0f3e8;
+    font-size: 13px;
+}
+
+.welcome-icon {
+    font-size: 65px;
+    opacity: .4;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    margin: 22px 0 30px;
+}
+
+.summary-card,
+.container-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #e7eee9;
+    border-radius: 13px;
+}
+
+.summary-card p {
+    color: #829188;
+    font-size: 12px;
+}
+
+.summary-card h2 {
+    font-size: 28px;
+    margin: 10px 0 5px;
+}
+
+.summary-card small {
+    color: #9aa69e;
+    font-size: 11px;
+}
+
+.green-text {
+    color: #168452;
+}
+
+.orange-text {
+    color: #d1843b;
+}
+
+.section {
+    margin-top: 28px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: #89968e;
+    font-size: 11px;
+}
+
+.live {
+    font-size: 10px;
+    color: #168452;
+    font-weight: bold;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bin-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    font-size: 23px;
+}
+
+.green-bg {
+    background: #e8f6ed;
+    color: #168452;
+}
+
+.orange-bg {
+    background: #fff1e4;
+    color: #d1843b;
+}
+
+.bin-code {
+    color: #98a49d;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.container-card h3 {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.description {
+    color: #87958c;
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 9px 0 20px;
+    min-height: 35px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 13px 0;
+}
+
+.data-row span {
+    color: #89968e;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #edf1ee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+.progress-green,
+.progress-orange {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.progress-green {
+    background: #23a46d;
+}
+
+.progress-orange {
+    background: #dc974e;
+}
+
+.status-text {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.table-container {
+    background: white;
+    border: 1px solid #e7eee9;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #edf1ee;
+    font-size: 11px;
+}
+
+th {
+    color: #91a097;
+    background: #fafcfb;
+    font-size: 9px;
+}
+
+td {
+    color: #64736a;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+}
+
+.green-badge {
+    color: #168452;
+    background: #e8f6ed;
+}
+
+.orange-badge {
+    color: #c17a34;
+    background: #fff1e4;
+}
+
+footer {
+    text-align: center;
+    color: #a0aaa3;
+    font-size: 10px;
+    margin-top: 35px;
+}
+
+@media (max-width: 850px) {
+    .sidebar {
+        width: 190px;
+    }
+
+    .content {
+        margin-left: 190px;
+        padding: 20px;
+    }
+
+    .summary {
+        gap: 9px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .summary,
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        gap: 12px;
+    }
+
+    .topbar h1 {
+        font-size: 19px;
+    }
+}
